@@ -18,6 +18,7 @@
   max-height: 200px;
   width: 100%;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .product__price {
@@ -40,4 +41,5 @@
 
 .product__rating {
   display: flex;
+  color: #f3ae00;
 }

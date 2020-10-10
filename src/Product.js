@@ -1,7 +1,25 @@
 import React from "react";
 import "./Product.css";
+import { useStateValue } from "./StateProvider";
+import StarTwoToneIcon from "@material-ui/icons/StarTwoTone";
 
-function Product({ title, price, rating, image }) {
+function Product({ id, title, price, rating, image }) {
+  const [{ basket }, dispatch] = useStateValue();
+  console.log("BASKET:", basket);
+  const addToBasket = () => {
+    //dispatch item into the data layer
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id,
+        title,
+        price,
+        rating,
+        image,
+      },
+    });
+  };
+
   return (
     <div className="product">
       <div className="product__info">
@@ -14,13 +32,16 @@ function Product({ title, price, rating, image }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p> * </p>
+              <p>
+                {" "}
+                <StarTwoToneIcon />{" "}
+              </p>
             ))}
         </div>
       </div>
 
       <img className="product__img" src={image} alt="" />
-      <button>Add to Basket</button>
+      <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
 }
