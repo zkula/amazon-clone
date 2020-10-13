@@ -23,7 +23,7 @@ function Home() {
           <Product
             id={2}
             title="Alesis Drums Nitro Mesh Kit | Eight Piece All Mesh Electronic Drum Kit With Super Solid Aluminum Rack, 385 Sounds, 60 Play Along Tracks, Connection Cables, Drum Sticks & Drum Key Included"
-            price={379.0}
+            price={379.99}
             rating={5}
             image="https://m.media-amazon.com/images/I/719+zJepvTL._AC_UY218_.jpg"
           />
@@ -46,7 +46,7 @@ function Home() {
           <Product
             id={5}
             title="Gildan Men's Fleece Zip Hooded Sweatshirt"
-            price={14.0}
+            price={14.99}
             rating={5}
             image="https://m.media-amazon.com/images/I/71Lpzlia0UL._AC_UL320_.jpg"
           />
@@ -55,7 +55,7 @@ function Home() {
           <Product
             id={6}
             title="Samsung Electronics UN55MU6490 Curved 55-Inch 4K Ultra HD Smart LED TV (2017 Model)"
-            price={(1, 949.0)}
+            price={1949.99}
             rating={5}
             image="https://m.media-amazon.com/images/I/61ToQWcRP4L._AC_UY218_.jpg"
           />

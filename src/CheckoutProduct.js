@@ -3,12 +3,10 @@ import "./CheckoutProduct.css";
 import StarTwoToneIcon from "@material-ui/icons/StarTwoTone";
 import { useStateValue } from "./StateProvider";
 
-function CheckoutProduct({ item }) {
+function CheckoutProduct({ item, hideButton }) {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
-    console.log("RemoveFromBasket Clicked");
-
     dispatch({
       type: "REMOVE_FROM_BASKET",
       id: item.id,
@@ -34,7 +32,9 @@ function CheckoutProduct({ item }) {
               </p>
             ))}
         </div>
-        <button onClick={removeFromBasket}>Remove from Basket</button>
+        {!hideButton && (
+          <button onClick={removeFromBasket}>Remove from Basket</button>
+        )}
       </div>
     </div>
   );
