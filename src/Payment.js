@@ -114,6 +114,10 @@ function Payment() {
           <div className="payment__details">
             {/* Stripe Implementation */}
             <form onSubmit={handleSubmit}>
+              <p>
+                This is a fake clone. Please enter "42" repeatedly to fill out
+                the credit card form.
+              </p>
               <CardElement onChange={handleChange} />
               <div className="payment__priceContainer">
                 <CurrencyFormat

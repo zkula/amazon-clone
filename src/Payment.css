@@ -55,3 +55,8 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+
+.payment__details > form > p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
