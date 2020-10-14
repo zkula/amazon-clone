@@ -45,10 +45,11 @@ function Home() {
           />
           <Product
             id={5}
-            title="Gildan Men's Fleece Zip Hooded Sweatshirt"
-            price={14.99}
+            title="
+            Squier by Fender Stratocaster Beginner Pack, Laurel Fingerboard, Black, with Gig Bag, Amp, Strap, Cable, Picks, and Fender Play"
+            price={199.99}
             rating={5}
-            image="https://m.media-amazon.com/images/I/71Lpzlia0UL._AC_UL320_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/71aTbbJS3TL._AC_SL1500_.jpg"
           />
         </div>
         <div className="home__row">
